@@ -1,0 +1,3 @@
+# Vectors to Some Regression Topics
+
+1. [Vectors and Matrix Operations](./vectors-matrix-operations.md) 1. [Some notes on matrices and linear operators](./matrices-linear-operators.md) 1. [Ranks and determinants](./ranks-determinants.md) 1. [Multivariate calculus](./multivariate-calculus.md) 1. [The multivariate normal distribution and related topics](./multivariate-normal-distribution.md) 1. [Independence, expectations and the moment generating function](./independence.md) 1. [The gamma distribution](./gamma-distribution.md) 1. [Notes and examples: The linear model](./examples-linear-model.md) 1. [Some regression topics](./regression-topics.md)

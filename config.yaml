@@ -1,0 +1,82 @@
+stages:
+  - docusaurus
+
+build_dir: /build
+output_type: last
+output_dir: /output
+
+docusaurus:
+  plugin: docusaurus
+  options:
+    course_name: CCAS
+    math: true
+    sidebar: js
+    structure:
+      - Introduction: content/landing-page/README.md
+      - Lecture:
+        - Numbers to Indices:
+            path: content/chapters/numbers-to-indices/lecture
+            extra:
+              - media
+            subsections:
+              - Overview: content/overview.md
+              - Numbers, arithmetic and basic algebra: content/numbers-arithmetic-basic-algebra.md
+              - Data vectors: content/data-vectors.md
+              - More on algebra: content/more-algebra.md
+              - Discrete random variables and the binomial distribution: content/discrete-random-vars-binomial-distribution.md
+              - Functions: content/functions.md
+              - Polynomials: content/polynomials.md
+              - Simple data analysis in R: content/simple-data-analysis-r.md
+              - Indices and the apply commands in R: content/indices-apply-commands-r.md
+        - Functions:
+            path: content/chapters/functions/lecture
+            extra:
+              - media
+            subsections:
+              - Overview: content/overview.md
+              - Functions of functions and the exponential function: content/functions-of-functions.exponential.md
+              - Inverse functions and the logarithm: content/inverse-functions-logarithm.md
+              - Continuity and limits: content/continuity-limits.md
+              - Sequences and series: content/sequences-series.md
+              - Slopes of lines and curves: content/slopes-lines-curves.md
+              - Derivatives: content/derivatives.md
+              - Applications of differentiation: content/applications-differentiation.md
+              - Integrals and probability denisty functions: content/integrals-prob-density-funcs.md
+              - Principles of programming: content/programming-principles.md
+              - The Central Limit Theorem and related topics: content/central-limit-theorem.md
+              - Miscellanea: content/miscellanea.md
+        - Multivariate to Power:
+            path: content/chapters/multivariate-to-power/lecture
+            extra:
+              - media
+            subsections:
+              - Overview: content/overview.md
+              - Multivariate probability distributions: content/multivariate-prob-distributions.md
+              - Some distributions related to the normal: content/distributions-normal.md
+              - Estimation, estimates and estimators: content/estimation.md
+              - Test of hypothesis, P values and related concepts: content/test-hypothesis-p-values.md
+              - Power and sample sizes: content/power-sample-sizes.md
+        - Vectors to Some Regression Topics:
+            path: content/chapters/vectors-matrix-ops/lecture
+            extra:
+              - media
+            subsections:
+              - Overview: content/overview.md
+              - Vectors and Matrix Operations: content/vectors-matrix-operations.md
+              - Some notes on matrices and linear operators: content/matrices-linear-operators.md
+              - Ranks and determinants: content/ranks-determinants.md
+              - Multivariate calculus: content/multivariate-calculus.md
+              - The multivariate normal distribution and related topics: content/multivariate-normal-distribution.md
+              - Independence, expectations and the moment generating function: content/independence.md
+              - The gamma distribution: content/gamma-distribution.md
+              - Notes and examples - The linear model: content/examples-linear-model.md
+              - Some regression topics: content/regression-topics.md
+    config_meta: 
+      title: Computing and Calculus for Applied Statistics
+      url: http://localhost/
+      baseUrl: /ccas/
+      onBrokenLinks: warn
+      onBrokenMarkdownLinks: warn
+    config_socials:
+      Main site: https://tutor-web.net/tw-info/open-course-computing-and-calculus-for-applies-statistics
+    copyright_string: CCAS Team
